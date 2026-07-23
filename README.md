@@ -4,15 +4,7 @@ A clean and responsive **To-Do List Application** built using **HTML, CSS, and J
 
 ---
 
-## 📸 Preview
 
-> Add a screenshot of your project here.
-
-Example:
-
-![To-Do App Screenshot](screenshot.png)
-
----
 
 ## 🚀 Features
 
