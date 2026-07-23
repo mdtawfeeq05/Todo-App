@@ -1,0 +1,140 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+}
+
+/* Heading */
+h1 {
+    color: #fff;
+    font-size: 45px;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+    text-shadow: 0 5px 10px rgba(0, 0, 0, .3);
+}
+
+/* Input */
+input {
+    width: 340px;
+    padding: 15px;
+    border: none;
+    outline: none;
+    border-radius: 12px;
+    font-size: 16px;
+    background: rgba(255, 255, 255, .2);
+    backdrop-filter: blur(10px);
+    color: #fff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .25);
+}
+
+input::placeholder {
+    color: #eee;
+}
+
+/* Add Button */
+body>button {
+    margin-top: 15px;
+    padding: 13px 30px;
+    border: none;
+    border-radius: 12px;
+    background: #00d084;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .25);
+}
+
+body>button:hover {
+    background: #00b86b;
+    transform: translateY(-3px) scale(1.05);
+}
+
+/* List */
+ul {
+    list-style: none;
+    margin-top: 35px;
+    width: 420px;
+}
+
+/* Task Card */
+li {
+    background: rgba(255, 255, 255, .15);
+    backdrop-filter: blur(15px);
+    color: #fff;
+    margin-bottom: 15px;
+    padding: 16px 20px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .2);
+    transition: .3s;
+    animation: fadeIn .4s ease;
+}
+
+li:hover {
+    transform: translateX(8px);
+    background: rgba(255, 255, 255, .25);
+}
+
+/* Delete Button */
+.delete {
+    background: #ff4d6d;
+    color: #fff;
+    border: none;
+    padding: 9px 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.delete:hover {
+    background: #e63946;
+    transform: scale(1.08);
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media(max-width:500px) {
+
+    input,
+    ul {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    li {
+        font-size: 15px;
+    }
+}
